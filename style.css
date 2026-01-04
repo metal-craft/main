@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #f0fff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+
+}
+.slider_zone{
+    background: linear-gradient(135deg, #88aef5, #e6a1a6);
+    color: #fff;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.slider_zone h3{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Century Gothic', sans-serif;
+    line-height: 40px;
+
+}
+.slider_zone p{
+    font-size: 15px;
+
+}
+
+.links {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.link-whatsapp {
+	padding-right: 10px;
+}
+
+.link-whatsapp img {
+	width: 140px;
+	height: 40px;
+}
+
+.link-instagram {
+    padding-left: 10px;
+}
+
+.link-instagram img{
+	width: 140px;
+	height: 40px;
+}
+
+.slider_img{
+    width: 400px;
+}
+
+.slider_line{
+    display: flex;
+    transition: all 1s;
+}
+
+.slider{
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+}
+
+.slider_btn-prev{
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 30px;
+
+    color: rgba(255,255,255,0.849);
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.849);
+    line-height: 1;
+}
+
+.slider_btn-next{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+
+    color: rgba(255,255,255,0.849);
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.849);
+    line-height: 1;
+}
+
+.slider_btn-prev:hover, .slider_btn-next:hover {
+    cursor: pointer;
+    background-color: rgba(75, 75, 75, 0.541);
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 600px;
+        max-width: 58.5vh;
+    }
+    .slider_zone {
+        background: linear-gradient(135deg, #88aef5, #e6a1a6);
+        color: #fff;
+        position: relative;
+        width: 400px;
+        max-width: 35vh;
+        max-height: 80vh;
+        place-items: center;
+    }
+    .slider_line{
+        display: flex;
+        transition: all 1s;
+    }
+    .slider{
+        width: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+}
